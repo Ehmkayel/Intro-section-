@@ -1,39 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 class="logo">Snap</h1>
+        <nav>
+          <ul class="menu">
+            <li>
+              <a href="#">Features</a>
+              <ul class="dropdown">
+                <li>
+                  <a href="#"><img src="./images/icon-todo.svg" />Todo List</a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./images/icon-calendar.svg" />Calender</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./images/icon-reminders.svg" />Reminders</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./images/icon-planning.svg" />Planning</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Company</a>
+              <ul class="dropdown">
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+          <div class="buttons">
+            <button>Login</button>
+            <button>Register</button>
+          </div>
+        </nav>
+      </header>
+      <section class="hero">
+        <div class="right">
+          <h1>Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button>Learn more</button>
+          <div class="icons">
+            <img src="./images/client-databiz.svg" alt="databiz logo" />
+            <img src="./images/client-audiophile.svg" alt="audiophile logo" />
+            <img src="./images/client-meet.svg" alt="meet logo" />
+            <img src="./images/client-maker.svg" alt="maker logo" />
+          </div>
+        </div>
+        <div class="left">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/image-hero-desktop.png"
+            />
+            <img src="./images/image-hero-mobile.png" alt="mobile image" />
+          </picture>
+        </div>
+      </section>
+    </main>
 
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
