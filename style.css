@@ -4,6 +4,101 @@
     box-sizing: border-box;
 }
 
+body{
+    background: hsl(0, 0%, 98%);
+    max-width: 1440px;
+    width: 100%; 
+    font-size: 18px;
+    font-family: "Epilogue", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%)
+}
+
+
+ul li{
+    list-style-type: none;
+}
+
+main{
+    padding: 20px 50px;
+}
+
+header{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul .dropdown{
+    display: flex;
+    flex-direction: column;
+}
+
+nav .buttons{
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 90px;
+}
+
+.hero .right{
+    max-width: 500px;
+}
+
+.hero .right h1{
+    font-size: 75px;
+    font-weight: 700;
+}
+
+.hero .right p{
+    padding: 50px 0;
+    color: hsl(0, 0%, 41%);
+    line-height: 1.5;
+    max-width: 450px;
+    font-weight: 500;
+}
+
+.hero .right button{
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%); 
+    border-radius: 10px;
+    margin-bottom: 70px;
+}
+
+.right button:hover{
+    background: hsl(0, 0%, 98%); 
+    color: hsl(0, 0%, 8%);
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
 .attribution {
     font-size: 11px;
     text-align: center;
