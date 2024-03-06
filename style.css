@@ -28,25 +28,81 @@ main{
 
 header{
     display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-nav{
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 nav ul{
     display: flex;
-    justify-content: space-between;
+    gap: 3rem;
     align-items: center;
+    margin-right: 400px;
 }
 
-nav ul .dropdown{
+.menu li{
+    position: relative;
+
+}
+
+.dropdown{
     display: flex;
-    flex-direction: column;
+    flex-direction: column ;
+    position: absolute;
+    border-radius: 10px;
+    background: white;
+    top: 35px;
+    left: -90px;
+    gap: 0;
+    width: 12rem;
+    z-index: 1;
+    box-shadow: 0 0 40px 7px rgba(0,0,0,0.2);
+    padding: 10px 20px;
+    align-items: baseline;
+    display: none;
+}
+
+.dropdown li{
+   
+    margin: 10px 0;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 200ms ease-in-out;
+
+}
+
+.link span{
+    padding-left: 10px;
+
+}
+
+.dropdown_company{
+    display: flex;
+    flex-direction: column ;
+    position: absolute;
+    border-radius: 10px;
+    background: white;
+    top: 35px;
+    left: -20px;
+    gap: 0;
+    width: 10rem;
+    z-index: 1;
+    box-shadow: 0 0 40px 7px rgba(0,0,0,0.2);
+    padding: 10px 20px;
+    align-items: baseline;
+    display: none;
+}
+
+.dropdown_company li{
+   
+    margin: 10px 0;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 200ms ease-in-out;
+
+}
+
+.sub_menu.active{
+    rotate: 180deg;
 }
 
 nav .buttons{
@@ -55,15 +111,29 @@ nav .buttons{
 
 }
 
+.buttons button{
+    background: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.buttons .login{
+    border: none;
+}
+
 .hero{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 90px;
+    margin: 90px 90px;
+    padding: 50px 0 0;
 }
 
 .hero .right{
     max-width: 500px;
+    margin: 50px 0 0;
 }
 
 .hero .right h1{
@@ -97,7 +167,7 @@ nav .buttons{
 .icons{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 10px;
+   
 }
 .attribution {
     font-size: 11px;
@@ -106,3 +176,15 @@ nav .buttons{
   .attribution a {
     color: hsl(228, 45%, 44%);
   }
+
+
+
+
+
+
+
+
+
+
+
+
